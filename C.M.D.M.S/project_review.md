@@ -14,7 +14,8 @@
 
 <br>
 
-![GIST](https://img.shields.io/badge/GIST-2024-005BAC?style=flat-square)
+![AI4GOOD](https://img.shields.io/badge/AI4GOOD-Hackathon-FF6F61?style=flat-square)
+![GIST](https://img.shields.io/badge/GIST-2024.03-005BAC?style=flat-square)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![YOLOv5](https://img.shields.io/badge/YOLOv5-00FFFF?style=flat-square&logo=yolo&logoColor=black)
@@ -139,18 +140,18 @@ UAV가 촬영한 광범위하고 상세한 정보를 처리하는 데 핵심적�
 
 ### 📊 결과 예시 (Detected Trash)
 
-```text
-  Detected Trash
-  ────────────────────────────────
-  Rope ........................  3
-  Styrofoam piece ............. 14
-  Plastic container ...........  6
-  Paper cup ...................  1
-  Clear plastic bottle ........  4
-  Unlabeled litter ............ 11
-  ────────────────────────────────
-  Total ....................... 39
-```
+실제 UAV 항공 이미지에 대한 탐지 결과 화면입니다. 탐지된 객체는 클래스별로 색상이 구분된 바운딩 박스로 표시되며, 종류별 수량과 총합(Total)이 함께 제공됩니다.
+
+<div align="center">
+  <img src="assets/detected-result.png" alt="CMDMS Detected Trash 결과 예시" width="760">
+</div>
+
+| 클래스 | 수량 | | 클래스 | 수량 |
+| :--- | :---: | :---: | :--- | :---: |
+| 🟥 Rope | 3 | | 🟩 Paper cup | 1 |
+| 🟨 Styrofoam piece | 14 | | 🟫 Bottle (Clear plastic bottle) | 4 |
+| 🟦 Plastic container | 6 | | 🟪 Unlabeled litter | 11 |
+| | | | **Total** | **39** |
 
 ---
 
@@ -227,13 +228,11 @@ python app.py
 | **Dataset** | `TACO (COCO Format)` |
 
 
-
-
 ---
 
 ## 👥 Team
 
-> **광주과학기술원(GIST) · 2024**
+> 본 프로젝트는 **AI4GOOD 해커톤(2024.03, 광주과학기술원 GIST)**에서 진행되었습니다.
 
 | 이름 | Name | 역할 |
 | :--- | :--- | :--- |
@@ -241,7 +240,16 @@ python app.py
 | 김동현 | Donghyeon Kim | Member |
 | 김태욱 | Taewook Kim | Member |
 | 김서현 | Seohyeon Kim | Member |
-| 김명진 | Myoungjin Kim | Member |
+| **김명진** | Myoungjin Kim | Member |
+
+### 🙋 My Role — 김명진 (Myoungjin Kim)
+
+> **AI 리서치 · 기술 문서화 (AI Research & Documentation)**
+
+- 해양 쓰레기 모니터링과 환경 지속가능성을 주제로 한 컴퓨터 비전 프로젝트에 참여
+- **TACO(Trash Annotations in Context)** 데이터셋 기반 객체 탐지 접근법에 대한 **문헌 및 기술 조사** 수행
+- **SAHI(Slicing Aided Hyper Inference)**가 이미지를 겹치는 패치(overlapping patches)로 분할해 추론함으로써 **YOLOv5의 소형 객체(small-object) 탐지 성능**을 향상시키는 원리를 조사하고, GitHub의 오픈소스 구현체를 분석
+- 프로젝트 **기획, 발표 준비, 기술 문서화** 지원
 
 ---
 
